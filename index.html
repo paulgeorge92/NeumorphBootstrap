@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="css/bootstrap.neumorph.css">
     <link rel="stylesheet" href="css/index.css">
@@ -129,33 +129,19 @@
         </div>
       </section>
 
-      <section class="row justify-center">
-        <div class="col-12 text-center componnet-title"></div>
-        <div class="component col-12"></div>
-      </section>
-    
-      <section class="row align-items-center radio justify-content-center">
-        <div class="col-12 text-center component-title">Radio Buttons</div>
-        <div class="component radio col-8 col-md-4 col-lg-3 align-self-center text-center">
-          <div class="neumorph-radio">
-            <input type="radio" id="radio1" name="neumorph-radio" />
-            <label class="label" for="radio1">
-              <div class="indicator"></div>
-              <span class="text">Radio 1</span>
-            </label>
-            <input type="radio" id="radio2" name="neumorph-radio" />
-            <label for="radio2" class="label">
-              <div class="indicator"></div>
-              <span class="text">Radio 2</span>
-            </label>
-          </div>
-        </div>
-      </section>
-    
       <section class="row align-items-center buttons justify-content-center">
         <div class="col-12 text-center component-title">Buttons</div>
+        
         <div class="component buttons col-12 align-self-center text-center" style="margin-bottom: 20px">
-          <input type="button" class="btn neumorph-button" value="Button" />
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+          <button type="button" class="btn btn-link">Link</button>
           <input type="button" disabled class="btn neumorph-button" value="Disabled Button" />
           <input type="button" class="btn neumorph-button round" value="+" />
           <input type="button" class="btn neumorph-button round" value="-">
@@ -250,7 +236,30 @@
         </div>
       </section>
     
-    
+      
+      <section class="row justify-center">
+        <div class="col-12 text-center componnet-title"></div>
+        <div class="component col-12"></div>
+      </section>
+
+      <section class="row align-items-center radio justify-content-center">
+        <div class="col-12 text-center component-title">Radio Buttons</div>
+        <div class="component radio col-8 col-md-4 col-lg-3 align-self-center text-center">
+          <div class="neumorph-radio">
+            <input type="radio" id="radio1" name="neumorph-radio" />
+            <label class="label" for="radio1">
+              <div class="indicator"></div>
+              <span class="text">Radio 1</span>
+            </label>
+            <input type="radio" id="radio2" name="neumorph-radio" />
+            <label for="radio2" class="label">
+              <div class="indicator"></div>
+              <span class="text">Radio 2</span>
+            </label>
+          </div>
+        </div>
+      </section>
+
       <section class="row search-box justify-content-center">
           <div class="col-12 text-center component-title">Search Box</div>
           <div class="component search-box col-12 col-md-6">

@@ -19,18 +19,18 @@ section.row + .row {
   margin-top: 30px;
 }
 
-.component.buttons input + input {
+.component.buttons .btn + .btn {
   margin-left: 15px;
 }
 
-.component.round-btns input {
+.component.round-btns .btn {
   font-size: 25px;
   height: 45px;
   padding: 0;
   width: 45px;
 }
 
-.component.round-btns input + input {
+.component.round-btns .btn + .btn {
   margin-left: 30px;
 }
 

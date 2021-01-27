@@ -390,12 +390,11 @@ a {
   color: var(--textColor);
   cursor: pointer;
   font-size: 1em;
-  outline: none !important;
+  outline: 0 !important;
   text-align: center;
 }
 
-.btn:active,
-.btn:focus {
+.btn:active {
   box-shadow: var(--insetBoxShadow);
 }
 
@@ -418,8 +417,50 @@ a {
   color: var(--primary) !important;
 }
 
-.btn.btn-secondary {
-  color: var(--secondary);
+.btn.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  color: var(--secondary) !important;
+}
+
+.btn.btn-success,
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+  color: var(--success) !important;
+}
+
+.btn.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:focus {
+  color: var(--danger) !important;
+}
+
+.btn.btn-warning,
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning:focus {
+  color: var(--warning) !important;
+}
+
+.btn.btn-info,
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus {
+  color: var(--info) !important;
+}
+
+.btn.btn-light,
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus,
+.btn.btn-dark,
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:focus {
+  color: var(--dark) !important;
 }
 
 /*Dropdown Buttons*/
