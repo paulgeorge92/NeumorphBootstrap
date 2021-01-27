@@ -379,6 +379,10 @@ a {
   background: var(--backgroundColor);
 }
 
+.breadcrumb.elevated {
+  box-shadow: var(--outsetBoxShadow);
+}
+
 /*Buttons*/
 
 .btn {
@@ -505,6 +509,40 @@ a {
 }
 .btn-group .btn:active {
   box-shadow: var(--insetBoxShadow) !important;
+}
+
+/* Cards */
+.card {
+  box-shadow: var(--outsetBoxShadow) !important;
+  border-radius: var(--borderRadius) !important;
+  background: var(--backgroundColor) !important;
+}
+
+.card .card-img-top {
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+}
+
+.card .card-img-bottom {
+  border-bottom-left-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+}
+
+.card .card-img {
+  border-radius: var(--borderRadius);
+}
+
+.card.bg-dark .card-img-overlay {
+  background: rgba(3, 3, 3, 0.5);
+  border-radius: var(--borderRadius);
+}
+
+.card.card-primary {
+  color: var(--primary);
+}
+
+.card.card-secondary {
+  color: var(--secondary);
 }
 
 /*Input*/
