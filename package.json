@@ -1,0 +1,35 @@
+{
+  "name": "bootstrapnuemorph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "build": "echo This is a static template, there is no bundler or bundling involved!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulgeorge92/NeumorphBootstrap.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Neumorphism",
+    "Responsive",
+    "Design",
+    "UI",
+    "UX",
+    "Trend",
+    "Website",
+    "Framework",
+    "Library"
+  ],
+  "author": "Paul George",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulgeorge92/NeumorphBootstrap/issues"
+  },
+  "homepage": "https://github.com/paulgeorge92/NeumorphBootstrap#readme",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}
