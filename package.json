@@ -1,7 +1,7 @@
 {
-  "name": "bootstrapnuemorph",
+  "name": "bootstrap-neumorphism",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bootstrap 4 components in neumorphism design",
   "main": "index.html",
   "scripts": {
     "start": "serve",
@@ -12,16 +12,10 @@
     "url": "git+https://github.com/paulgeorge92/NeumorphBootstrap.git"
   },
   "keywords": [
-    "Bootstrap",
-    "Neumorphism",
-    "Responsive",
-    "Design",
-    "UI",
-    "UX",
-    "Trend",
-    "Website",
-    "Framework",
-    "Library"
+    "neumorphism",
+    "bootstrap",
+    "responsive",
+    "library"
   ],
   "author": "Paul George",
   "license": "MIT",
