@@ -19,8 +19,9 @@ section.row + .row {
   margin-top: 30px;
 }
 
-.component.buttons .btn + .btn {
+.component.buttons .btn {
   margin-left: 15px;
+  margin-bottom: 20px;
 }
 
 .component.round-btns .btn {

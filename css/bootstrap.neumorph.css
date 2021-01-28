@@ -294,8 +294,8 @@ a {
 
 .alert {
   box-shadow: var(--insetBoxShadow);
-  background: none;
-  background-color: none;
+  background: var(--backgroundColor);
+  background-color: var(--backgroundColor);
 }
 
 .alert.elevated {
@@ -543,6 +543,25 @@ a {
 
 .card.card-secondary {
   color: var(--secondary);
+}
+
+/* Carousel */
+.carousel {
+  padding: 25px;
+  box-shadow: var(--outsetBoxShadow);
+  border-radius: var(--borderRadius);
+}
+
+.carousel-item {
+  border-radius: var(--borderRadius);
+}
+
+.carousel-item img {
+  border-radius: var(--borderRadius);
+}
+
+.carousel-indicators {
+  bottom: 25px;
 }
 
 /*Input*/
