@@ -2,12 +2,13 @@
   margin-bottom: 100px;
 }
 
-.jumbotron {
+.jumbotron.default {
   background-color: transparent;
   padding: 4rem 15px;
+  box-shadow: none;
 }
 
-section.row + .row {
+section.row+.row {
   margin-top: 70px;
 }
 
@@ -31,16 +32,16 @@ section.row + .row {
   width: 45px;
 }
 
-.component.round-btns .btn + .btn {
+.component.round-btns .btn+.btn {
   margin-left: 30px;
 }
 
-.component.dropdown-btn > .dropdown {
+.component.dropdown-btn>.dropdown {
   display: inline-block;
   margin-right: 10px;
 }
 
-.component.cards > div {
+.component.cards>div {
   margin-bottom: 20px;
 }
 
@@ -52,6 +53,6 @@ section.row + .row {
   margin-right: 20px;
 }
 
-.component.collapses > div {
+.component.collapses>div {
   margin-bottom: 20px;
 }
