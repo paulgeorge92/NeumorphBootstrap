@@ -165,7 +165,7 @@
           <input type="button" class="btn neumorph-button round" value="-">
         </div>
     
-        <div class="component dropdown-btn col-12 col-md-2 align-self-center">
+        <div class="component dropdown-btn col-12 col-md-5 align-self-center">
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown button
@@ -175,7 +175,21 @@
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
             </div>
+            
           </div>
+          <div class="btn-group">
+              <button type="button" class="btn btn-danger">Split Dropdown</button>
+              <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
         </div>
     
         <div class="component button-group col-12 col-md-4 align-self-center">
@@ -417,6 +431,88 @@
           </div>
         </div>
         
+      </section>
+
+      <section class="row collapses justify-content-center">
+        <div class="col-12 text-center component-title">Collapse</div>
+        <div class="component collapses col-12 row justify-content-center">
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Button with data-target
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+          </p>
+          <div class="collapse col-12" id="collapseExample">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>  
+          <div class="collapse multi-collapse col-12 col-md-6" id="multiCollapseExample1">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+          <div class="collapse multi-collapse col-12 col-md-6" id="multiCollapseExample2">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+          
+      </section>
+
+      <section class="row accordians justify-content-center">
+        <div class="col-12 text-center component-title">Accordion</div>
+        <div class="component accordians col-12">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <div class="mb-0">
+                      <div class="text-left collapsed"  >
+                        Collapsible Group Item #1
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="mb-0">
+                      <div class="collapsed" >
+                        Collapsible Group Item #2
+                      </div>
+                    </div>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Some placeholder content for the second accordion panel. This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="mb-0">
+                      <div class="collapsed">
+                        Collapsible Group Item #3
+                      </div>
+                    </div>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
       </section>
 
       <section class="row justify-content-center">

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
 :root {
   --backgroundColor: #e6e7ee;
-  --borderColor: #d1d9e6;
+  --borderColor: rgba(0, 0, 0, 0.125);
   --textColor: #394a56;
   --lightShade: #ffffff;
   --darkShade: #b8b9be;
@@ -296,6 +296,7 @@ a {
   box-shadow: var(--insetBoxShadow);
   background: var(--backgroundColor);
   background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
 }
 
 .alert.elevated {
@@ -377,6 +378,7 @@ a {
 .breadcrumb {
   box-shadow: var(--insetBoxShadow);
   background: var(--backgroundColor);
+  border-radius: var(--borderRadius);
 }
 
 .breadcrumb.elevated {
@@ -484,17 +486,23 @@ a {
   padding-bottom: 0;
 }
 
-.dropdown-item {
+.dropdown-item,
+.dropdown-item-text {
   color: var(--textColor);
+  padding: 0.75em;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover,
-.dropdown-item:active {
+.dropdown-item:active .dropdown-item.active {
   box-shadow: var(--insetBoxShadow);
   background: var(--backgroundColor);
   color: var(--textColor);
   outline: none;
+}
+
+.dropdown-divider {
+  border-top-color: var(--borderColor);
 }
 
 /* Button Group*/
@@ -516,6 +524,14 @@ a {
   box-shadow: var(--outsetBoxShadow) !important;
   border-radius: var(--borderRadius) !important;
   background: var(--backgroundColor) !important;
+}
+
+.card-header {
+  background: var(--backgroundColor);
+}
+
+.card-footer {
+  background: var(--backgroundColor);
 }
 
 .card .card-img-top {
@@ -562,6 +578,32 @@ a {
 
 .carousel-indicators {
   bottom: 25px;
+}
+
+.accordion {
+  border: 1px solid var(--borderColor);
+  box-shadow: var(--outsetBoxShadow);
+  border-radius: var(--borderRadius);
+}
+
+.accordion > .card {
+  box-shadow: none !important;
+  border: 0;
+  border-radius: 0 !important;
+}
+
+.accordion > .card:not(:last-of-type) {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.accordion > .card > .card-header {
+  cursor: pointer;
+  padding: 1.5em 1.25em;
+  border: none;
+}
+
+.accordion .card-body {
+  padding: 1em 1.25em 1.5em;
 }
 
 /*Input*/

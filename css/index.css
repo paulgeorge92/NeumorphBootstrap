@@ -35,10 +35,23 @@ section.row + .row {
   margin-left: 30px;
 }
 
+.component.dropdown-btn > .dropdown {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .component.cards > div {
   margin-bottom: 20px;
 }
 
-span.badge {
+.badge {
   margin: 5px;
+}
+
+.component.collapses .btn {
+  margin-right: 20px;
+}
+
+.component.collapses > div {
+  margin-bottom: 20px;
 }
